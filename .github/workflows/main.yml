@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Instalar pytest
         run: pip install pytest
+
+      - name: Bajar codigo
+        uses: actions/checkout@v7
         
       - name: Probar codigo
-        run: pytest test.py 
+        run: pytest test.py
